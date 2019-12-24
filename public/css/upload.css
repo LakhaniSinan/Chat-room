@@ -1,0 +1,45 @@
+.custom-file-input {
+  color: transparent;
+}
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: "Files upload";
+  color: black;
+  background: -moz-linear-gradient(
+    125deg,
+    rgba(39, 107, 130, 1) 0,
+    rgba(49, 84, 129, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    125deg,
+    rgba(39, 107, 130, 1) 0,
+    rgba(49, 84, 129, 1) 100%
+  );
+  white-space: nowrap;
+  -webkit-user-select: none;
+
+  border: 1px solid #999;
+  border-radius: 3px;
+  outline: none;
+
+  cursor: pointer;
+  font-size: 15px;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 14px;
+  padding-right: 30px;
+  padding-left: 30px;
+  font-family: sans-serif;
+  border-color: grey;
+}
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.custom-file-input:active {
+  outline: 0;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
